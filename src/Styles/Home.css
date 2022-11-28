@@ -1,0 +1,62 @@
+.banner-image {
+    background-image:  linear-gradient(45deg,rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url('../assets/farm2.jpg');
+    background-size: cover;
+  }
+  
+  .bgcolor .scrolled{
+    background-color: rgba(0,0,0,1);
+  }
+ .content{
+  /* display: flex; */
+  background-color: rgba(90, 202, 90,0.5);
+  color: white;
+  width: 250px;
+  margin-right: 50%;
+  padding: 30px;
+  height: 50vh;
+ }
+ 
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: green;
+}
+.nav-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+ @media (min-width:992px){
+    #special{
+      margin-left: 150px;
+    }
+ }
+ @media (max-width:991px){
+    #navbarNav{
+      background-color: rgba(0,0,0,0.6);
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+
+    }
+    .content{
+      margin: 0;
+
+    }
+    .nav-item{
+      text-align: center;
+      margin: 0;
+    }
+ }
